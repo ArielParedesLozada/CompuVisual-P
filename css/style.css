@@ -1,0 +1,56 @@
+nav{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background: rgba(220, 43, 146, 0.463);
+    padding: 10px;
+}
+
+ul{
+    position: relative;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-flex;
+    margin: auto;
+    width: 12.5%;
+    list-style: none;
+    vertical-align: middle;
+}
+
+nav ul li a{
+    color: rgb(239, 16, 191);
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    justify-items: center;
+    vertical-align: middle;
+}
+
+footer{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.texto-plano{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-items: center;
+}
