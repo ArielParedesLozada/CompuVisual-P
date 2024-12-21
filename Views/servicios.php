@@ -27,7 +27,7 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Edit User</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Remove User</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="FPDFreport()">Reporte PDF</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="JasperReport()">Reporte IReport</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="JasperReport()">Reporte JasperReport</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="singleReport()">Reporte del usuario</a>
     </div>
 
@@ -59,6 +59,10 @@
         var url;
         function FPDFreport() {
             window.open('./Reports/FPDF.php', '_blank')
+        }
+
+        function JasperReport() {
+            window.open('./Reports/JasperReport.php', '_blank');
         }
 
         function singleReport() {
