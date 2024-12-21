@@ -15,6 +15,7 @@ La página con un login. Debe usar sesiones, y puro PHP.
 </ul>
 
 **Para conectar con la base de datos**
+##
 Hacer un archivo conexion.php, como el que está en conexion.example.php, pero con las variables propias 
 
 ## HASTA EL 14/01/2024

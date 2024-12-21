@@ -1,12 +1,8 @@
 <?php
 include_once('./conexion.php');
-if (!isset($_SESSION['user'])) {
-    echo "No papu";
-    return;
-}
 $conexion = new Conexion();
 $con = $conexion->conectar();
-$ced = $_GET['id'];
+$ced = $_POST['cedula'];
 $nom = $_POST['nombre'];
 $ape = $_POST['apellido'];
 $tlf = $_POST['telefono'];
