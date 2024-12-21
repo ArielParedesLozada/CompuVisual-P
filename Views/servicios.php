@@ -26,6 +26,9 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">Nuevo estudiante</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Edit User</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Remove User</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="FPDFreport()">Reporte PDF</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="JasperReport()">Reporte JasperReport</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="singleReport()">Reporte del usuario</a>
     </div>
 
     <div id="dlg" class="easyui-dialog" style="width:400px" data-options="closed:true,modal:true,border:'thin',buttons:'#dlg-buttons'">
@@ -54,6 +57,20 @@
     </div>
     <script type="text/javascript">
         var url;
+        function FPDFreport() {
+            window.open('./Reports/FPDF.php', '_blank')
+        }
+
+        function JasperReport() {
+            window.open('./Reports/JasperReport.php', '_blank');
+        }
+
+        function singleReport() {
+            var row = $('#dg').datagrid('getSelected');
+            if (row) {
+                window.open('./Reports/singleReport.php?id=' + row[0], '_blank')
+            }
+        }
 
         function newUser() {
             $('#dlg').dialog('open').dialog('center').dialog('setTitle', 'Nuevo estudiante');
