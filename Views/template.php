@@ -43,9 +43,6 @@
             $mvc->enlacesPaginas();
             ?>
         </section>
-        <section>
-
-        </section>
     </main>
     <footer>
         <h1 id="fecha"></h1>
