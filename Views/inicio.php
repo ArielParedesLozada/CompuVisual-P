@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/inicio.css">
-    <title>Inicio</title>
+    
 </head>
 
 <body>
     <section class="header">
-        <h1 class="titulo-principal">¡Bienvenido al sistema de gestión para estudiantes!</h1>
+        <h1>¡Bienvenido al sistema de gestión para estudiantes!</h1>
     </section>
 
     <section class="descripcion">
         <div class="contenido">
             <p>
-                Este sistema está diseñado para facilitar la gestión de información de estudiantes. Aquí podrás agregar, editar, eliminar y consultar registros de manera rápida y eficiente. Además, puedes generar reportes personalizados de forma sencilla.
+                Este sistema está diseñado para facilitar la gestión de información de estudiantes. Aquí podrás agregar,
+                editar, eliminar y consultar registros de manera rápida y eficiente. Además, puedes generar reportes
+                personalizados de forma sencilla.
             </p>
             <img src="img/descripcion.png" alt="Estudiantes gestionando información">
         </div>
@@ -26,7 +29,9 @@
         <div class="contenido">
             <img src="img/indicaciones.png" alt="Indicaciones del sistema">
             <p>
-                Para disfrutar de todas las funcionalidades del sistema, inicia sesión con tus credenciales. Esto te permitirá gestionar información de estudiantes, realizar acciones como agregar, editar, eliminar y consultar registros, así como generar reportes detallados de manera segura y eficiente.
+                Para disfrutar de todas las funcionalidades del sistema, inicia sesión con tus credenciales. Esto te
+                permitirá gestionar información de estudiantes, realizar acciones como agregar, editar, eliminar y
+                consultar registros, así como generar reportes detallados de manera segura y eficiente.
             </p>
         </div>
     </section>
@@ -34,7 +39,8 @@
     <section class="proposito">
         <div class="contenido">
             <p>
-                Nuestro objetivo es simplificar la administración de datos y garantizar un manejo seguro y organizado de la información de los estudiantes.
+                Nuestro objetivo es simplificar la administración de datos y garantizar un manejo seguro y organizado de
+                la información de los estudiantes.
             </p>
             <img src="img/proposito.png" alt="Propósito del sistema">
         </div>
