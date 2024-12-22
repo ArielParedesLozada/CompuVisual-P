@@ -23,7 +23,7 @@
                 <li><a href="index.php?action=inicio">Inicio</a></li>
                 <li><a href="index.php?action=nosotros">Mision-Vision</a></li>
                 <li><a href="index.php?action=servicios">Servicios</a></li>
-                <li><a href="index.php?action=contacto">Contactos</a></li>
+                <li><a href="index.php?action=contactos">Contactos</a></li>
                 <li> <img class="img-ban" src="https://servicios.uta.edu.ec/evaluacionintegral/Images/banderin.png"
                         alt="uta-img" width="50px" height="50px" />
                 </li>
