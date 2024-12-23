@@ -1,7 +1,7 @@
 <?php
 class EnlacesPaginas{
     public static function enlacesPaginas($input) {
-        if ($input=="nosotros" || $input=="servicios" || $input=="contactanos") {
+        if ($input=="nosotros" || $input=="servicios" || $input=="contactanos" || $input=="login" ) {
             $module = "Views/".$input.".php";
         } else {
             $module = "Views/inicio.php";            
