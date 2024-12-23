@@ -1,0 +1,117 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor de las Tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo de cada Tarjeta */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de la Tarjeta */
+.card img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    border-bottom: 3px solid #b22222; /* Opcional: línea decorativa debajo de la imagen */
+}
+
+/* Contenido de la Tarjeta */
+.card-content {
+    padding: 10px;
+}
+
+/* Títulos (Nombres) */
+.card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #b22222;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+/* Descripciones */
+.card-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555555;
+    margin-top: 15px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Estadísticas (Lectura, Vistas, Comentarios) */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #888;
+    margin-top: 15px;
+}
+
+.stats span {
+    background-color: #f7f7f7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efectos de Hover para Títulos */
+.card-content h3:hover {
+    color: #ff4500;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+/* Redes sociales */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #b22222;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ffdddd;
+    transform: scale(1.1);
+    color: #333;
+}
