@@ -33,14 +33,14 @@
                 "facebook" => "https://facebook.com/mateo.profile"
             ],
             [
-                "imagen" => "img4.jpg",
+                "imagen" => "Img/Leo.png",
                 "nombre" => "Leonel",
                 "descripcion" => "Interesado en tecnologías de inteligencia artificial y aprendizaje automático.",
                 "github" => "https://github.com/Leo538",
                 "facebook" => "https://www.facebook.com/profile.php?id=100010167997541&locale=es_LA"
             ],
             [
-                "imagen" => "img5.jpg",
+                "imagen" => "Img/Sebas.png",
                 "nombre" => "Sebastian",
                 "descripcion" => "Programador full stack en desarrollo, apasionado por la innovación tecnológica.",
                 "github" => "https://github.com/seby10",
