@@ -1,0 +1,120 @@
+/* Estilo General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f7f8fa, #eaeaea);
+    color: #333;
+}
+
+.main-header {
+    background: linear-gradient(90deg, #b22222, #8b0000);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    width: 120%; /* Aumenta horizontalmente un 20% más del ancho normal */
+    margin-left: -10%; /* Centra el elemento al aumentar su tamaño */
+    margin-right: -10%; /* Elimina márgenes extras */
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Secciones */
+.section-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    color: #b22222;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #b22222;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+    margin-top: 15px;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.signature {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Divisor */
+.divider {
+    width: 90%;
+    height: 4px;
+    background: linear-gradient(90deg, #b22222, #8b0000);
+    margin: 50px auto;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+/* Pie de Página */
+.main-footer {
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
