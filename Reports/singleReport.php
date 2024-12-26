@@ -17,7 +17,7 @@ $pdf->Cell(0,10, 'Reporte de estudiantes',0, 1, 'C');
 $pdf->Ln(10);
 
 $pdf->SetFont('Arial', 'B', 12);
-$pdf->Cell(20, 10, 'Cedula', 1, 0, 'C');
+$pdf->Cell(30, 10, 'Cedula', 1, 0, 'C');
 $pdf->Cell(30, 10, 'Nombre', 1, 0, 'C');
 $pdf->Cell(30, 10, 'Apellido', 1, 0, 'C');
 $pdf->Cell(30, 10, 'Telefono', 1, 0, 'C');
@@ -27,7 +27,7 @@ $pdf->SetFont('Arial', '', 12);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $pdf->Cell(20, 10, $row['CED_EST'], 1, 0, 'C');
+        $pdf->Cell(30, 10, $row['CED_EST'], 1, 0, 'C');
         $pdf->Cell(30, 10, $row['NOM_EST'], 1, 0, 'C');
         $pdf->Cell(30, 10, $row['APE_EST'], 1, 0, 'C');
         $pdf->Cell(30, 10, $row['TLF_EST'], 1, 0, 'C');
