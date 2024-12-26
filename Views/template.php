@@ -32,7 +32,6 @@
     </header>
     <main>
         <div class="div-inicial">
-            <h1>Hola papus</h1>
             <!-- <img src="https://img.freepik.com/fotos-premium/descarga-imagen-fondo-hd_555090-60427.jpg"
                 alt="img-not-found" /> -->
         </div>
