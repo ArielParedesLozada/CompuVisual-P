@@ -1,56 +1,55 @@
-nav{
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    background: rgba(220, 43, 146, 0.463);
-    padding: 10px;
+/* Estilo general para el body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-ul{
-    position: relative;
-    margin: auto;
-    width: 75%;
-    text-align: center;
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #fff;
+    padding: 0.8rem 1rem; /* Agregar espaciado para mejorar la visibilidad */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li{
-    display: inline-flex;
-    margin: auto;
-    width: 12.5%;
-    list-style: none;
-    vertical-align: middle;
+/* Logo con tamaño dinámico */
+.navbar-brand img {
+    max-height: 80px; /* Aumentar el tamaño del logo */
+    width: auto;
 }
 
-nav ul li a{
-    color: rgb(239, 16, 191);
-    text-decoration: none;
+/* Estilo de los enlaces de la barra de navegación */
+.nav-link {
+    color: #dc2b92 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-section{
-    position: relative;
-    margin: auto;
-    padding: 10px;
-    justify-items: center;
-    vertical-align: middle;
+/* Efecto hover para los enlaces */
+.nav-link:hover {
+    color: #a51e6d !important;
+    transform: scale(1.1);
 }
 
-footer{
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    background-color: red;
-    color: white;
-    font-size: large;
-    text-align: center;
-}
+/* Mejora de la visualización del menú en dispositivos pequeños */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .navbar-toggler {
+        border-color: #dc2b92;
+    }
 
-.texto-plano{
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    justify-items: center;
+    .navbar-toggler-icon {
+        background-color: #dc2b92;
+    }
+
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
 }
