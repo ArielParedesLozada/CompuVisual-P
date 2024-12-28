@@ -21,13 +21,13 @@
                 editar, eliminar y consultar registros de manera rápida y eficiente. Además, puedes generar reportes
                 personalizados de forma sencilla.
             </p>
-            <img src="img/descripcion.png" alt="Estudiantes gestionando información">
+            <img src="Img/descripcion.png" alt="Estudiantes gestionando información">
         </div>
     </section>
 
     <section class="indicaciones">
         <div class="contenido">
-            <img src="img/indicaciones.png" alt="Indicaciones del sistema">
+            <img src="Img/indicaciones.png" alt="Indicaciones del sistema">
             <p>
                 Para disfrutar de todas las funcionalidades del sistema, inicia sesión con tus credenciales. Esto te
                 permitirá gestionar información de estudiantes, realizar acciones como agregar, editar, eliminar y
@@ -42,13 +42,13 @@
                 Nuestro objetivo es simplificar la administración de datos y garantizar un manejo seguro y organizado de
                 la información de los estudiantes.
             </p>
-            <img src="img/proposito.png" alt="Propósito del sistema">
+            <img src="Img/proposito.png" alt="Propósito del sistema">
         </div>
     </section>
 
     <section class="beneficios">
         <div class="contenido">
-            <img src="img/beneficios.png" alt="Beneficios del sistema">
+            <img src="Img/beneficios.png" alt="Beneficios del sistema">
             <ul>
                 <li>Interfaz intuitiva y fácil de usar.</li>
                 <li>Gestión rápida y eficiente de información estudiantil.</li>

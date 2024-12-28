@@ -248,7 +248,7 @@ $loggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
         var url;
 
         function iniciarSesion() {
-            window.location.href = './views/login.php';
+            window.location.href = './Views/login.php';
         }
 
         function cerrarSesion() {
