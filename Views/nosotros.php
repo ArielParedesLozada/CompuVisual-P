@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misión y Visión - Carrera de Electrónica y Telecomunicaciones</title>
+    <title>Misión y Visión - Carrera de Software</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mision.css">
 </head>
 <body>
     <!-- Título principal -->
     <header class="main-header">
-        <h1>Carrera de Electrónica y Telecomunicaciones</h1>
+        <h1>Carrera de Software</h1>
     </header>
 
     <!-- Sección de Misión -->
     <section class="section-container">
         <div class="text-content">
             <h2>Misión</h2>
-            <p>Formar profesionales líderes y competentes en el ámbito de la Electrónica y las Comunicaciones, con una visión humanista y pensamiento crítico. A través de la Docencia, la Investigación y la Vinculación, promovemos el conocimiento que responde a las necesidades del país.</p>
+            <p>Formar profesionales líderes y competentes en el ámbito del Software, con una visión humanista y pensamiento crítico. A través de la Docencia, la Investigación y la Vinculación, promovemos el conocimiento que responde a las necesidades del país.</p>
         </div>
         <div class="image-content">
             <img src="Views/Img/fisei-2020.png" alt="Imagen representativa de misión">
