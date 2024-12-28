@@ -21,16 +21,16 @@
             [
                 "imagen" => "Img/Diego.png",
                 "nombre" => "Diego",
-                "descripcion" => "Apasionado por la programación orientada a objetos y la resolución de problemas.",
+                "descripcion" => "Apasionado por la programación orientada a objetos.",
                 "github" => "https://github.com/Diego200509",
                 "facebook" => "https://www.facebook.com/diego.jijon.77?locale=es_LA"
             ],
             [
-                "imagen" => "Img/.png",
+                "imagen" => "Img/Mateo.jpg",
                 "nombre" => "Mateo",
                 "descripcion" => "Especialista en diseño y desarrollo frontend con un enfoque en UX/UI.",
                 "github" => "https://github.com/ArielParedesLozada",
-                "facebook" => "https://facebook.com/mateo.profile"
+                "facebook" => "https://www.facebook.com/zuck"
             ],
             [
                 "imagen" => "Img/Leo.png",
