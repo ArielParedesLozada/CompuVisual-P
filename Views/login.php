@@ -1,4 +1,5 @@
 <?php
+session_start();
 $error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
 if (isset($_SESSION['error'])) {
     unset($_SESSION['error']);
@@ -100,11 +101,10 @@ if (isset($_SESSION['error'])) {
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit" class="btn">Entrar</button>
+            <?php if (!empty($error)): ?>
+                <p class="error"><?php echo $error; ?></p>
+            <?php endif; ?>
         </form>
-        <?php if (isset($_SESSION['error'])): ?>
-            <p class="error"><?= htmlspecialchars($_SESSION['error']); ?></p>
-            <?php unset($_SESSION['error']); ?>
-        <?php endif; ?>
     </div>
 </body>
 </html>

@@ -1,39 +1,62 @@
 <?php
 require_once('../FPDF/fpdf.php');
-
 include_once('../Models/conexion.php');
+
+class PDF extends FPDF
+{
+    // Encabezado
+    function Header()
+    {
+        // Logo UTA izquierda
+        $this->Image('../Img/logo.png', 10, 10, 40);
+        // Logo FISEI derecha
+        $this->Image('../Img/logofisei.png', 170, 10, 40);
+        // Título
+        $this->SetFont('Arial', 'B', 14);
+        $this->Cell(0, 10, utf8_decode('REPORTE DE ESTUDIANTES '), 0, 1, 'C');
+        $this->Ln(20);
+    }
+
+}
+
 $conexion = new Conexion();
 $con = $conexion->conectar();
 $query = "SELECT * FROM estudiantes";
 $result = $con->execute_query($query);
 
-$pdf = new FPDF();
-
+$pdf = new PDF();
 $pdf->AddPage();
-$pdf->SetFont('Arial','B', 16);
+$pdf->SetFont('Arial', '', 12);
 
-$pdf->Cell(0,10, 'Reporte de estudiantes',0, 1, 'C');
-$pdf->Ln(10);
 
+// Ajuste para centrar la tabla correctamente
+$margen_izquierdo = ($pdf->GetPageWidth() - 190) / 2;
+$pdf->SetX($margen_izquierdo);
+
+// Encabezado de la tabla
 $pdf->SetFont('Arial', 'B', 12);
-$pdf->Cell(30, 10, 'Cedula', 1, 0, 'C');
-$pdf->Cell(30, 10, 'Nombre', 1, 0, 'C');
-$pdf->Cell(30, 10, 'Apellido', 1, 0, 'C');
-$pdf->Cell(30, 10, 'Telefono', 1, 0, 'C');
-$pdf->Cell(30, 10, 'Direccion', 1, 1, 'C');
+$pdf->SetFillColor(200, 200, 200);
+$pdf->Cell(38, 10, 'Cedula', 1, 0, 'C', true);
+$pdf->Cell(38, 10, 'Nombre', 1, 0, 'C', true);
+$pdf->Cell(38, 10, 'Apellido', 1, 0, 'C', true);
+$pdf->Cell(38, 10, 'Telefono', 1, 0, 'C', true);
+$pdf->Cell(38, 10, 'Direccion', 1, 1, 'C', true);
 
 $pdf->SetFont('Arial', '', 12);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $pdf->Cell(30, 10, $row['CED_EST'], 1, 0, 'C');
-        $pdf->Cell(30, 10, $row['NOM_EST'], 1, 0, 'C');
-        $pdf->Cell(30, 10, $row['APE_EST'], 1, 0, 'C');
-        $pdf->Cell(30, 10, $row['TLF_EST'], 1, 0, 'C');
-        $pdf->Cell(30, 10, $row['DIR_EST'], 1, 1, 'C');
+        $pdf->SetX($margen_izquierdo);
+        $pdf->Cell(38, 10, $row['CED_EST'], 1, 0, 'C');
+        $pdf->Cell(38, 10, utf8_decode($row['NOM_EST']), 1, 0, 'C');
+        $pdf->Cell(38, 10, utf8_decode($row['APE_EST']), 1, 0, 'C');
+        $pdf->Cell(38, 10, $row['TLF_EST'], 1, 0, 'C');
+        $pdf->Cell(38, 10, utf8_decode($row['DIR_EST']), 1, 1, 'C');
     }
 } else {
-     $pdf->Cell(70, 10, 'No hay estudiantes', 1, 1, 'C');
+    $pdf->SetX($margen_izquierdo);
+    $pdf->Cell(190, 10, 'No hay estudiantes', 1, 1, 'C');
 }
 
-$pdf->Output('I','estudiantes.pdf');
+$pdf->Output('I', 'estudiantes.pdf');
+?>
